@@ -633,7 +633,7 @@ MAPDATA GetMap(string datapath)//天狼星不会给自己的函数写注释！
 				ThisNum += workbench[i];
 				if (!(workbench[i + 1] >= '0'&& workbench[i + 1] <= '9'))
 				{
-					mapdata.map[numCounter++] = stoi(ThisNum);
+					mapdata.map[numCounter++] = stoi(ThisNum)-1;
 					ThisNum = "";
 				}
 			}
